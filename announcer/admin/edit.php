@@ -131,9 +131,8 @@ class ANCR_Admin_Edit{
 
         echo '<p>Get updates on the WordPress plugins, tips and tricks to enhance your WordPress experience. No spam.</p>';
 
-        echo '<div class="subscribe_form" data-action="https://aakashweb.us19.list-manage.com/subscribe/post-json?u=b7023581458d048107298247e&id=ef5ab3c5c4&c=">
+        echo '<div class="subscribe_form">
         <input type="text" value="' . esc_attr( get_option( 'admin_email' ) ) . '" class="subscribe_email_box" placeholder="Your email address">
-        <p class="subscribe_confirm">Thanks for subscribing !</p>
         <button class="button subscribe_btn"><span class="dashicons dashicons-email"></span> Subscribe</button>
         </div>';
 

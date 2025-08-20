@@ -4,18 +4,28 @@ if( ! defined( 'ABSPATH' ) ) exit;
 
 class ANCR_Display{
 
+    public static $script_enqueued = false;
+
     public static function init(){
 
-        add_action( 'wp_enqueue_scripts', array( __CLASS__, 'scripts_styles' ) );
+        add_action( 'wp_enqueue_scripts', array( __CLASS__, 'enqueue_styles' ) );
 
         add_action( 'wp_footer', array( __CLASS__, 'display' ) );
 
     }
 
-    public static function scripts_styles(){
+    public static function enqueue_styles(){
 
-        wp_enqueue_script( 'announcer-js', ANCR_URL . 'public/js/script.js', array( 'jquery' ), ANCR_VERSION );
         wp_enqueue_style( 'announcer-css', ANCR_URL . 'public/css/style.css', array(), ANCR_VERSION );
+
+    }
+
+    public static function enqueue_scripts(){
+
+        if( !self::$script_enqueued ){
+            wp_enqueue_script( 'announcer-js', ANCR_URL . 'public/js/script.js', array( 'jquery' ), ANCR_VERSION );
+            self::$script_enqueued = true;
+        }
 
     }
 
@@ -129,6 +139,8 @@ class ANCR_Display{
         $html .= '</div>';
 
         $html .= self::styles( $id, $settings );
+
+        self::enqueue_scripts();
 
         return $html;
 

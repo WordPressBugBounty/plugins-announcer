@@ -273,6 +273,29 @@ $(document).ready(function(){
         alert('Preview will always display the announcement irrespective of the schedule, cookies and location rules configured.');
     });
 
+    $('.subscribe_btn').click(function(e){
+        e.preventDefault();
+
+        var form = $('<form>', {
+            action: 'https://www.aakashweb.com/apps/subscription/',
+            method: 'POST',
+            target: '_blank'
+        }).append($('<input>', {
+            type: 'hidden',
+            name: 'email',
+            value: $('.subscribe_email_box').val()
+        })).append($('<input>', {
+            type: 'hidden',
+            name: 'l',
+            value: '6aacb87c-0434-4ac1-b53c-22d7790ec4ac'
+        }));
+
+        $('body').append(form);
+        form.submit();
+        form.remove();
+
+    });
+
     $(document).on('click', '.ancr_multi_add_msg, .ancr_duplicate_btn', function(e){
         e.preventDefault();
         $('a[href="#tab_pro_tab"]').click();

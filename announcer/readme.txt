@@ -7,8 +7,8 @@ Donate link: https://www.paypal.me/vaakash/
 License: GPLv2 or later
 Requires PHP: 5.3
 Requires at least: 4.4
-Tested up to: 6.6
-Stable tag: 6.1
+Tested up to: 6.8.2
+Stable tag: 6.2
 
 Add notification bar to your site and display any message like welcome message, promotions, coupons, news banner to the top/bottom of the page.
 
@@ -158,6 +158,9 @@ For more FAQs, please visit the [plugin homepage](https://www.aakashweb.com/faqs
 
 
 ## Changelog
+
+### 6.2
+* New: Load JS only on pages where announcement is inserted.
 
 ### 6.1
 * New: Slide down effect on the page when announcement is shown.
