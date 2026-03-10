@@ -405,6 +405,19 @@ class ANCR_Settings_Form{
         $fields->end();
 
         $fields->start('ticker_layout');
+        $fields->heading( __( 'Ticker start position', 'announcer' ) );
+        $fields->field( 'select', array(
+            'value' => $settings[ 'ticker_start_position' ],
+            'name' => 'settings[ticker_start_position]',
+            'list' => array(
+                'end' => __( 'End', 'announcer' ),
+                'middle' => __( 'Middle', 'announcer' )
+            )
+        ));
+        $fields->description( __( 'The start position of the ticker scroll on the screen.', 'announcer' ) );
+        $fields->end();
+
+        $fields->start('ticker_layout');
         $fields->heading( __( 'Pause ticker on hover', 'announcer' ) );
         $fields->field( 'select', array(
             'value' => $settings[ 'ticker_pause' ],

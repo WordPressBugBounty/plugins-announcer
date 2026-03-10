@@ -38,6 +38,7 @@ class ANCR_Settings{
             'ticker_speed' => '20',
             'ticker_direction' => 'right_left',
             'ticker_pause' => 'yes',
+            'ticker_start_position' => 'end',
             'style_bar' => [],
             'style_primary_btn' => [],
             'style_secondary_btn' => [],

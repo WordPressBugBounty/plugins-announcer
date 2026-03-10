@@ -44,6 +44,7 @@
     max-width: 1000px;
     margin: 0 auto;
     display: flex;
+    will-change: transform;
 }
 .ancr .ancr-inner{
     display: inline-block;
@@ -84,6 +85,9 @@
 }
 .ancr.ancr-lo-ticker.ancr-lo-ticker-anim .ancr-container{
     animation: ancr-marquee 20s linear infinite;
+}
+.ancr.ancr-lo-ticker.ancr-lo-ticker-anim.ancr-ticker-start-middle .ancr-container{
+    animation-delay: calc(var(--ancr-ticker-speed) * -0.33);
 }
 .ancr.ancr-lo-ticker .ancr-container{ /* Ticker */
     max-width: none !important;
@@ -187,5 +191,8 @@
     }
     .ancr-lo-separate_column .ancr-btn-wrap{
         margin: 0.5em 0 0 0;
+    }
+    .ancr.ancr-lo-ticker.ancr-lo-ticker-anim.ancr-ticker-start-middle .ancr-container{
+        animation-delay: 0s;
     }
 }

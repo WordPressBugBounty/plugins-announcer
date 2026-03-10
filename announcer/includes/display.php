@@ -104,6 +104,7 @@ class ANCR_Display{
         array_push( $classes, 'ancr-lo-' . $settings[ 'layout' ] );
         if( $settings[ 'layout' ] != 'ticker' ) array_push( $classes, 'ancr-align-' . $settings[ 'align_content' ] );
         if( $settings[ 'close_btn' ] == 'yes' ) array_push( $classes, 'ancr-has-close-btn' );
+        if( $settings[ 'ticker_start_position' ] == 'middle' ) array_push( $classes, 'ancr-ticker-start-middle' );
 
         $settings_attr = $settings;
 
@@ -116,6 +117,7 @@ class ANCR_Display{
         unset( $settings_attr[ 'schedule_timezone' ] );
         unset( $settings_attr[ 'ticker_direction' ] );
         unset( $settings_attr[ 'ticker_pause' ] );
+        unset( $settings_attr[ 'ticker_start_position' ] );
 
         $settings_attr[ 'id' ] = $id;
         $settings_attr[ 'schedule_from' ] = ANCR_Utilities::datetime_timestamp( $settings[ 'schedule_from' ], $settings[ 'schedule_timezone' ] );

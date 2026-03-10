@@ -1,4 +1,4 @@
-# Announcer - Sticky Message Banner, Notification Bar - Add to Top, Bottom of your Website
+# Announcer - Sticky Message Banner & Notification Bar
 Contributors: vaakash
 Author URI: https://www.aakashweb.com/
 Plugin URI: https://www.aakashweb.com/wordpress-plugins/announcer/
@@ -7,86 +7,70 @@ Donate link: https://www.paypal.me/vaakash/
 License: GPLv2 or later
 Requires PHP: 5.3
 Requires at least: 4.4
-Tested up to: 6.8.2
-Stable tag: 6.2
+Tested up to: 6.9.1
+Stable tag: 6.3
 
-Add notification bar to your site and display any message like welcome message, promotions, coupons, news banner to the top/bottom of the page.
+Add customizable WordPress notification bar to display announcements, promotions, coupons, or news at the top or bottom of your website.
 
 
 
 ## Description
 
-With Announcer plugin you can add beautiful and professional looking notification bars (also called message banners/sticky bars) to your website. You can display custom message you want like promotions, cookie usage notes, welcome notes, privacy policy note etc. You can use this to increase user engagement in your website or boost sales and services.
+**Announcer** is the ultimate WordPress notification bar plugin designed to help you display important messages, promotions, cookie notices, and alerts anywhere on your site. Whether you want to welcome new visitors, drive traffic to a seasonal sale, or ensure GDPR compliance with a cookie banner, Announcer makes it incredibly easy. 
 
-You can add Call-To-Action buttons easily to the announcement bar and assign roles to them like opening a link or closing the announcement itself.
+Built to be lightweight and user-friendly, you can create eye-catching sticky bars that capture attention without slowing down your site. Add powerful Call-To-Action (CTA) buttons, set up customized display rules, and start boosting your user engagement and conversion rates in minutes.
 
-View [**Live demo**](https://wpdemos.aakashweb.com/announcer/?utm_source=readme&utm_medium=description&utm_campaign=ancr-pro) of the plugin.
+See it in action: View the [**Live demo**](https://wpdemos.aakashweb.com/announcer/?utm_source=readme&utm_medium=description&utm_campaign=ancr-pro) of the plugin!
 
-### ⭐ Features
+### ⭐ Why Choose Announcer? (Core Features)
 
-Announcer plugin is feature rich and powerful enough which you cannot find in any other plugin.
+Announcer is packed with market-leading features to give you complete control over your website banners:
 
-* Create **multiple** announcements.
-* Add messages to both **top and bottom** of your website.
-* Supports **stacking** if there are more than one announcements in one page.
-* **Schedule** announcements for a date-time range including **timezone**.
-* Supports both **fixed and sticky** bars.
-* **Call-To-Action** buttons.
-* **Horizontal ticker** text scroll feature.
-* **Re-display messages** or hide permanently using cookies.
-* Insert **any content** into announcement message like forms, images, shortcodes.
-* Can use **shortcodes** in messages.
-* Create rules and **Conditionally display** announcements based on page.
-* **Responsive first** design and works well on smaller/mobile screens.
-* **Multiple layout options**, colors to choose and customize the announcements.
-* Automatic display based on **time/page scroll**.
-* Open/close **animations**.
-* **Simple and easy** to use.
-* **No coding** knowledge required.
-* Target announcements based on **WPML translated post language**.
-* Clean and lightweight plugin.
-* GDPR complaint.
+* **Unlimited Announcements:** Create and manage multiple notification bars at the same time.
+* **Flexible Positioning:** Display messages at the **top or bottom** of your site.
+* **Smart Stacking:** Neatly stack multiple banners if more than one announcement is active on a single page.
+* **Sticky & Fixed Layouts:** Keep your message in view as users scroll, or fix it to the top of the page.
+* **Advanced Scheduling:** Automate your promo bars by scheduling a start and end date/time.
+* **Call-To-Action (CTA) Buttons:** Drive clicks with customizable buttons that can open links or dismiss the banner.
+* **Horizontal Ticker:** Display longer text beautifully with a smooth scrolling news-ticker effect.
+* **Smart Cookie Control:** Allow users to permanently close notices, or set them to re-display after a specific time.
+* **Rich Content Support:** Insert **any content** into your banner, including images, HTML, or shortcodes from other plugins (like forms).
+* **Conditional Display Rules:** Target specific audiences by showing banners only on certain pages, posts, or categories.
+* **100% Mobile Responsive:** Designed mobile-first to ensure your announcements look perfect on any screen size.
+* **Customization Made Easy:** Choose from multiple layout options and unlimited color palettes to match your brand.
+* **Trigger Options:** Automatically display banners based on a time delay or user page scroll.
+* **Smooth Animations:** Engage users with sleek open and close transition effects.
+* **Multilingual Ready:** Target announcements based on your WPML translated post language.
+* **Lightweight & Secure:** Clean code that won't bloat your site, fully GDPR compliant.
 
-### 🚛 Use cases & ideas
+### 🚛 Popular Use Cases & Ideas
 
-You can use Announcer plugin to display announcement or message banner on your website for things like,
+You can use the Announcer plugin to create a wide variety of sticky messages, including:
 
-* Promotional messages like coupons, during seasonal sales.
-* Cookie consent message.
-* Welcome message.
-* Privacy policy notes.
-* Terms and conditions changes.
-* Site wide notices and important announcement messages.
-* News.
-* Forms like "email newsletter" using shortcodes of subscription plugins, wpforms, mailchimp etc.
-* Launch of new products.
-* New blog post.
-* Feedback messages.
-* Sharing icons, links.
-* Offers on products.
-* Messages like COVID-19 updates to visitors.
+* **Promo Bars:** Highlight sales, discount coupons, and seasonal offers.
+* **Compliance:** Display a GDPR-friendly cookie consent banner or privacy policy updates.
+* **Lead Generation:** Embed newsletter sign-ups (Mailchimp, WPForms) directly into the banner via shortcodes.
+* **Alerts & Updates:** Share important site-wide notices, business hours.
+* **Content Promotion:** Drive traffic to new blog posts, product launches, or special events.
+* **Welcome Messages:** Greet new visitors with custom introductory notes.
+* **Social Proof & Feedback:** Share quick links, social icons, or ask for customer feedback.
 
 ### 💎 PRO version
 
-There is a PRO version available and it includes below features to further enhance and spice up your announcements even better.
+Ready to take your announcements to the next level? The **PRO version** offers advanced marketing tools designed to maximize your conversions and give you pinpoint targeting capabilities:
 
-* [**Multiple messages with ticker/slider**](https://www.aakashweb.com/wordpress-plugins/announcer/?utm_source=readme&utm_medium=description&utm_campaign=ancr-pro#pro) - You can display multiple messages in one announcement bar. Add a "ticker" (otherwise) "slider" animation and auto-play all the messages with next/prev buttons.
+* [**Multiple Messages (Ticker/Slider)**](https://www.aakashweb.com/wordpress-plugins/announcer/?utm_source=readme&utm_medium=description&utm_campaign=ancr-pro#pro) - Maximize your screen real estate. Add a slider or auto-playing ticker to display multiple messages within a single announcement bar, complete with next/prev navigation.
+* [**Urgency Countdown Timers**](https://www.aakashweb.com/wordpress-plugins/announcer/?utm_source=readme&utm_medium=description&utm_campaign=ancr-pro#pro) - Skyrocket your sales! Embed fully customizable countdown timers right into your promo bars to create FOMO (Fear Of Missing Out) for limited-time offers.
+* [**Advanced Animations**](https://www.aakashweb.com/wordpress-plugins/announcer/?utm_source=readme&utm_medium=description&utm_campaign=ancr-pro#pro) - Grab instant attention with eye-catching entrance animations for your banners and funky effects for your CTA buttons.
+* [**Smart Visitor Targeting**](https://www.aakashweb.com/wordpress-plugins/announcer/?utm_source=readme&utm_medium=description&utm_campaign=ancr-pro#pro) - Show the right message to the right user. Conditionally display banners based on traffic source (referrer), device type, OS, browser, user login status, user role, or even visit count!
+* [**Shortcode Placement**](https://www.aakashweb.com/wordpress-plugins/announcer/?utm_source=readme&utm_medium=description&utm_campaign=ancr-pro#pro) - Need a banner inside a specific post? Use shortcodes to place your announcements exactly where you want them, inside pages, posts, or theme templates.
+* [**One-Click Duplicate**](https://www.aakashweb.com/wordpress-plugins/announcer/?utm_source=readme&utm_medium=description&utm_campaign=ancr-pro#pro) - Save time by instantly cloning your favorite announcement setups.
 
-* [**Countdown timer**](https://www.aakashweb.com/wordpress-plugins/announcer/?utm_source=readme&utm_medium=description&utm_campaign=ancr-pro#pro) - Display a countdown timer next to your announcements to notify any deadline or to increase engagement. You can customize the countdown timer as you want.
+[**Check out the PRO version**](https://www.aakashweb.com/wordpress-plugins/announcer/?utm_source=readme&utm_medium=description&utm_campaign=ancr-pro#pro) | [View PRO Demo](https://wpdemos.aakashweb.com/announcer/?utm_source=readme&utm_medium=description&utm_campaign=ancr-pro)
 
-* [**Animation**](https://www.aakashweb.com/wordpress-plugins/announcer/?utm_source=readme&utm_medium=description&utm_campaign=ancr-pro#pro) - Want to grab the attention of your announcements ? You can add animation to your CTA buttons and funky transitions to the bar when they open/close
+### 👋 Feedback & Support
 
-* [**Visitor conditions**](https://www.aakashweb.com/wordpress-plugins/announcer/?utm_source=readme&utm_medium=description&utm_campaign=ancr-pro#pro) - With this feature you can target visitors based on conditions like referrer, browser, OS, device type, user login status, user role, number of times user has visited the site, number of times user has logged in and more !
-
-* [**Shortcode**](https://www.aakashweb.com/wordpress-plugins/announcer/?utm_source=readme&utm_medium=description&utm_campaign=ancr-pro#pro) - You can insert the announcement anywhere on your website using Shortcode like post/pages or even in theme templates directly
-
-* [**Duplicate Announcement**](https://www.aakashweb.com/wordpress-plugins/announcer/?utm_source=readme&utm_medium=description&utm_campaign=ancr-pro#pro) - Duplicate announcements easily at the click of a button.
-
-[**Get the PRO version**](https://www.aakashweb.com/wordpress-plugins/announcer/?utm_source=readme&utm_medium=description&utm_campaign=ancr-pro#pro) - [View demo](https://wpdemos.aakashweb.com/announcer/?utm_source=readme&utm_medium=description&utm_campaign=ancr-pro)
-
-### 👋 Feedback
-
-If you have any issues or have any idea to share please post them in the [**support forum**](https://www.aakashweb.com/forum/discuss/wordpress-plugins/announcer/).
+We love hearing from our users! If you run into any issues, have questions, or want to share a feature request, please reach out to us in the [**Official Support Forum**](https://www.aakashweb.com/forum/discuss/wordpress-plugins/announcer/).
 
 
 
@@ -158,6 +142,10 @@ For more FAQs, please visit the [plugin homepage](https://www.aakashweb.com/faqs
 
 
 ## Changelog
+
+### 6.3
+* New: Option to start the ticker scroll from the middle of the screen.
+* Fix: Optimized ticker animation for better performance.
 
 ### 6.2
 * New: Load JS only on pages where announcement is inserted.
