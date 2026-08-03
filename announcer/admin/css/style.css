@@ -49,7 +49,7 @@
     text-decoration: none;
 }
 .ancr_preview_btn_wrap .ancr_duplicate_btn .dashicons{
-    margin: 5px 0 0 0;
+    margin: 1px 0 0 0;
 }
 
 
@@ -88,10 +88,14 @@
 }
 .mtab_links .dashicons {
     margin: 0 10px 0 0;
-    font-size: 15px;
+    font-size: 14px;
     width: 15px;
     height: 15px;
     vertical-align: middle;
+    background-color: var(--wp-admin-theme-color);
+    color: #fff;
+    border-radius: 50%;
+    padding: 3px;
 }
 
 .mtab_wrap {
@@ -340,7 +344,7 @@
     text-align: center;
 }
 .share_btns .button .dashicons {
-    margin: 5px 5px 0 0;
+    margin: 1px 5px 0 0;
 }
 .share_btns .button:hover{
     text-decoration: none;
@@ -526,6 +530,9 @@ input:checked + .ancr_slider:before {
 }
 .pro_list {
     margin: 2em 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
 }
 .pro_list li:after{
     display: block;
@@ -539,11 +546,12 @@ input:checked + .ancr_slider:before {
     margin: 0 15px 0 0;
 }
 .pro_list > li {
-    margin: 0 0em 1em 0em;
+    margin: 0;
     position: relative;
     padding: 2em;
     background: #fff6e9;
     border-radius: 1em;
+    border: 1px solid #c3c4c7;
 }
 .pro_list h4{
     font-size: 18px;
@@ -555,7 +563,7 @@ input:checked + .ancr_slider:before {
     font-size: 16px;
     font-style: italic;
     margin: 0.5em 0 0 0;
-    color: #888;
+    color: #333;
 }
 .pro_list .vc_list {
     display: flex;

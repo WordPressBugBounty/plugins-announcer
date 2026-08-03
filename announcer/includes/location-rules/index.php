@@ -173,6 +173,37 @@ class Location_Rules{
                 'helper' => 1
             ),
 
+            'wc-product' => array(
+                'name' => 'WooCommerce product',
+                'callback' => array( $this, 'rule_is_product' ),
+                'placeholder' => __( 'Select specific products', 'announcer' ),
+                'helper' => 1
+            ),
+
+            'wc-shop' => array(
+                'name' => 'WooCommerce shop page',
+                'callback' => array( $this, 'rule_is_shop' ),
+                'helper' => 0
+            ),
+
+            'wc-cart' => array(
+                'name' => 'WooCommerce cart page',
+                'callback' => array( $this, 'rule_is_cart' ),
+                'helper' => 0
+            ),
+
+            'wc-checkout' => array(
+                'name' => 'WooCommerce checkout page',
+                'callback' => array( $this, 'rule_is_checkout' ),
+                'helper' => 0
+            ),
+
+            'wc-account' => array(
+                'name' => 'WooCommerce account page',
+                'callback' => array( $this, 'rule_is_account' ),
+                'helper' => 0
+            )
+
         ));
         
         return $rules;
@@ -378,6 +409,7 @@ class Location_Rules{
         
         foreach( $rules as $k => $v ){
             $s = selected( $k, $val[ 0 ], false );
+            $h = '';
             
             if( isset( $v[ 'helper' ] ) ){
                 $h = 'data-helper="' . esc_attr( $v[ 'helper' ] ) . '"';
@@ -725,6 +757,73 @@ class Location_Rules{
 
     }
     
+    function rule_is_product( $mode, $ids = '' ){
+
+        if( $mode == 1 ){ // Rule selectors
+            $list = array();
+
+            $products = get_posts( 'posts_per_page=-1&post_type=product&post_status=publish,draft,private,future' );
+            if ( !empty( $products ) ){
+                foreach ( $products as $product ){
+                    $list[ $product->ID ] = $product->post_title;
+                }
+                return $list;
+            }else{
+                die( __( 'No products !', 'announcer' ) );
+            }
+
+        }elseif( $mode == 2 ){ // Rule check
+            if ( !function_exists( 'is_product' ) ) {
+                return false;
+            }
+
+            $selected_products = $this->array_it( $ids );
+
+            if ( empty( $selected_products ) ) {
+                return is_product();
+            }
+
+            return is_product() && in_array( get_the_ID(), $selected_products, false );
+        }
+
+    }
+
+    function rule_is_shop( $mode, $ids = '' ){
+
+        if( $mode == 1 ){
+        }elseif( $mode == 2 ){
+            return function_exists( 'is_shop' ) ? is_shop() : false;
+        }
+
+    }
+
+    function rule_is_cart( $mode, $ids = '' ){
+
+        if( $mode == 1 ){
+        }elseif( $mode == 2 ){
+            return function_exists( 'is_cart' ) ? is_cart() : false;
+        }
+
+    }
+
+    function rule_is_checkout( $mode, $ids = '' ){
+
+        if( $mode == 1 ){
+        }elseif( $mode == 2 ){
+            return function_exists( 'is_checkout' ) ? is_checkout() : false;
+        }
+
+    }
+
+    function rule_is_account( $mode, $ids = '' ){
+
+        if( $mode == 1 ){
+        }elseif( $mode == 2 ){
+            return function_exists( 'is_account_page' ) ? is_account_page() : false;
+        }
+
+    }
+
     function field( $field_type, $params = array() ){
         
         $defaults = array(

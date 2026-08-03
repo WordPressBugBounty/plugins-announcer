@@ -7,8 +7,8 @@ Donate link: https://www.paypal.me/vaakash/
 License: GPLv2 or later
 Requires PHP: 5.3
 Requires at least: 4.4
-Tested up to: 6.9.1
-Stable tag: 6.3
+Tested up to: 7.0.2
+Stable tag: 6.4
 
 Add customizable WordPress notification bar to display announcements, promotions, coupons, or news at the top or bottom of your website.
 
@@ -142,6 +142,11 @@ For more FAQs, please visit the [plugin homepage](https://www.aakashweb.com/faqs
 
 
 ## Changelog
+
+### 6.4
+* New: New location rules to target WooCommerce pages.
+* Fix: Misc Admin UI enhancements.
+* Fix: Support for WordPress 7.0.
 
 ### 6.3
 * New: Option to start the ticker scroll from the middle of the screen.

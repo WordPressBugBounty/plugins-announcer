@@ -18,7 +18,7 @@ class ANCR_Settings_Form{
             'cta' => [
                 'name' => __( 'Call to Actions', 'announcer' ),
                 'callback' => [ __CLASS__, 'cta' ],
-                'icon' => 'dashicons-yes'
+                'icon' => 'dashicons-flag'
             ],
 
             'display' => [
@@ -76,7 +76,7 @@ class ANCR_Settings_Form{
             'location_rules' => [
                 'name' => __( 'Location rules', 'announcer' ),
                 'callback' => [ __CLASS__, 'location_rules' ],
-                'icon' => 'dashicons-location-alt'
+                'icon' => 'dashicons-location'
             ],
 
             'pro_tab' => [
@@ -844,25 +844,25 @@ class ANCR_Settings_Form{
         echo $foot;
 
         echo '<ul class="pro_list">';
-        echo '<li><span class="dashicons dashicons-image-rotate"></span> <h4>Multiple Messages in one –</h4><p>You can add multiple messages to one announcement bar and add a "ticker" animation to scroll through them one by one.</p>
+        echo '<li><span class="dashicons dashicons-image-rotate"></span> <h4>Multiple Messages in One</h4><p>You can add multiple messages to one announcement bar and add a "ticker" animation to scroll through them one by one.</p>
         <ul class="vc_list">
             <li>Arrow buttons to click next/previous announcement</li>
             <li>Autoplay</li>
             <li>Randomize order</li>
             <li>Display one announcement in random</li>
         </ul><br/>
-        <p><a href="https://www.aakashweb.com/wordpress-plugins/announcer/?utm_source=admin&utm_medium=multi&utm_campaign=ancr-pro#pro" target="_blank"><img src="' . ANCR_ADMIN_URL . 'images/multi.gif" class="pro_img" width="60%" /></a></p>
+        <p><a href="https://www.aakashweb.com/wordpress-plugins/announcer/?utm_source=admin&utm_medium=multi&utm_campaign=ancr-pro#pro" target="_blank"><img src="' . ANCR_ADMIN_URL . 'images/multi.gif" class="pro_img" width="100%" /></a></p>
         </li>';
 
-        echo '<li><span class="dashicons dashicons-clock"></span> <h4>Countdown Timer –</h4><p>Display a countdown timer next to your announcements to notify any deadline or to increase engagement. You can customize the countdown timer as you want. Multiple modes are available out of the box.</p><br/>
-        <p><a href="https://www.aakashweb.com/wordpress-plugins/announcer/?utm_source=admin&utm_medium=countdown&utm_campaign=ancr-pro#pro" target="_blank"><img src="' . ANCR_ADMIN_URL . 'images/countdown.png" class="pro_img" width="70%" /></a></p>
+        echo '<li><span class="dashicons dashicons-clock"></span> <h4>Countdown Timer</h4><p>Display a countdown timer next to your announcements to notify any deadline or to increase engagement. You can customize the countdown timer as you want. Multiple modes are available out of the box.</p><br/>
+        <p><a href="https://www.aakashweb.com/wordpress-plugins/announcer/?utm_source=admin&utm_medium=countdown&utm_campaign=ancr-pro#pro" target="_blank"><img src="' . ANCR_ADMIN_URL . 'images/countdown.png" class="pro_img" width="100%" /></a></p>
         </li>';
 
-        echo '<li><span class="dashicons dashicons-admin-page"></span> <h4>Duplicate Announcement –</h4><p>You can easily duplicate announcements at the click of a button.</p><br/>
-        <p><a href="https://www.aakashweb.com/wordpress-plugins/announcer/?utm_source=admin&utm_medium=duplicate&utm_campaign=ancr-pro#pro" target="_blank"><img src="' . ANCR_ADMIN_URL . 'images/duplicate-announcement.png" class="pro_img" width="50%" /></a></p>
+        echo '<li><span class="dashicons dashicons-admin-page"></span> <h4>Duplicate Announcement</h4><p>You can easily duplicate announcements at the click of a button.</p><br/>
+        <p><a href="https://www.aakashweb.com/wordpress-plugins/announcer/?utm_source=admin&utm_medium=duplicate&utm_campaign=ancr-pro#pro" target="_blank"><img src="' . ANCR_ADMIN_URL . 'images/duplicate-announcement.png" class="pro_img" width="100%" /></a></p>
         </li>';
 
-        echo '<li><span class="dashicons dashicons-visibility"></span> <h4>Visitor Conditions –</h4><p>With visitor conditions feature you can target visitors based on conditions like </p>
+        echo '<li><span class="dashicons dashicons-visibility"></span> <h4>Visitor Conditions</h4><p>With visitor conditions feature you can target visitors based on conditions like </p>
         <ul class="vc_list">
             <li>cookie</li>
             <li>referrer</li>
@@ -877,9 +877,9 @@ class ANCR_Settings_Form{
             <li>custom function</li>
         </ul></li>';
 
-        echo '<li><span class="dashicons dashicons-buddicons-groups"></span> <h4>Animation –</h4><p>Want to grab the attention of your announcements ? With announcer PRO you can add animation to your CTA buttons and funky transitions to the bar when they open/close</p></li>';
+        echo '<li><span class="dashicons dashicons-buddicons-groups"></span> <h4>Animation</h4><p>Want to grab the attention of your announcements ? With announcer PRO you can add animation to your CTA buttons and funky transitions to the bar when they open/close</p></li>';
 
-        echo '<li><span class="dashicons dashicons-shortcode"></span> <h4>Shortcode –</h4><p>With PRO version you can insert your announcement anywhere on your website using Shortcode like post/pages or even in theme templates directly using <code>[announcer]</code>.</p></li>';
+        echo '<li><span class="dashicons dashicons-shortcode"></span> <h4>Shortcode</h4><p>With PRO version you can insert your announcement anywhere on your website using Shortcode like post/pages or even in theme templates directly using <code>[announcer]</code>.</p></li>';
         echo '</ul>';
 
         echo $foot;

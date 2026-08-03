@@ -4,13 +4,13 @@ Plugin Name: Announcer
 Plugin URI: https://www.aakashweb.com/wordpress-plugins/announcer/
 Description: Add notification bar to your site and display any message like welcome message, promotions, coupons, news banner to the top/bottom of the page.
 Author: Aakash Chakravarthy
-Version: 6.3
+Version: 6.4
 Author URI: https://www.aakashweb.com/
 Text Domain: announcer
 Domain Path: /languages
 */
 
-define( 'ANCR_VERSION', '6.3' );
+define( 'ANCR_VERSION', '6.4' );
 define( 'ANCR_PATH', plugin_dir_path( __FILE__ ) ); // All have trailing slash
 define( 'ANCR_URL', plugin_dir_url( __FILE__ ) );
 define( 'ANCR_ADMIN_URL', trailingslashit( plugin_dir_url( __FILE__ ) . 'admin' ) );
