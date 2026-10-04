@@ -40,6 +40,10 @@ class ANCR_Display{
 
     public static function display(){
 
+        if( is_admin() || ( defined( 'IFRAME_REQUEST' ) && IFRAME_REQUEST ) ){
+            return;
+        }
+
         $announcements = Announcer::get_announcements();
 
         $preview_data = self::handle_preview();
@@ -126,7 +130,7 @@ class ANCR_Display{
         $settings_attr = json_encode( $settings_attr );
         $class = implode( ' ', $classes );
 
-        $html .= '<div id="ancr-' . esc_attr( $id ) . '" class="' . esc_attr( $class ) . '" data-props="' . esc_attr( $settings_attr ) . '">';
+        $html .= '<div id="ancr-' . esc_attr( $id ) . '" class="' . esc_attr( $class ) . '" data-props="' . esc_attr( $settings_attr ) . '" role="region" aria-live="polite" aria-atomic="true" aria-label="Announcement">';
             if( $settings[ 'close_btn' ] == 'yes' ){
                 $html .= self::close_btn();
             }
@@ -181,7 +185,8 @@ class ANCR_Display{
                 'href' => $link,
                 'target' => $link_target,
                 'class' => $class,
-                'title' => $button[ 'title' ]
+                'title' => $button[ 'title' ],
+                'aria-label' => !empty( $button[ 'title' ] ) ? $button[ 'title' ] : $button[ 'text' ]
             );
 
             if( $button[ 'no_follow' ] == 'yes' ){
@@ -200,7 +205,7 @@ class ANCR_Display{
     public static function close_btn(){
 
         $icon = '<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ancr-close-icon" viewBox="0 0 50 50"><path fill="currentColor" d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z"/></svg>';
-        return '<a href="#" class="ancr-close-btn ancr-close" title="Close">' . $icon . '</a>';
+        return '<a href="#" class="ancr-close-btn ancr-close" title="Close" aria-label="Close announcement">' . $icon . '</a>';
 
     }
 

@@ -579,7 +579,6 @@ input:checked + .ancr_slider:before {
     border-radius: 5px;
 }
 .pro_ctas .button {
-    font-size: 15px;
     padding-left: 1.5em;
     padding-right: 1.5em;
 }

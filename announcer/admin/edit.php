@@ -52,7 +52,7 @@ class ANCR_Admin_Edit{
         echo '<p class="description">' . esc_html__( 'Supports - HTML, Shortcodes, emojis', 'announcer' ) . '</p>';
 
         echo '<div class="ancr_multi_btns">
-        <button class="button button-primary ancr_multi_add_msg">Add another message <span class="pro_tag">PRO</span></button>
+        <button class="button ancr_multi_add_msg">Add Multiple or Small Screen Message <span class="pro_tag">PRO</span></button>
         </div>';
 
         echo '</div>';

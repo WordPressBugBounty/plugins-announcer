@@ -858,6 +858,9 @@ class ANCR_Settings_Form{
         <p><a href="https://www.aakashweb.com/wordpress-plugins/announcer/?utm_source=admin&utm_medium=countdown&utm_campaign=ancr-pro#pro" target="_blank"><img src="' . ANCR_ADMIN_URL . 'images/countdown.png" class="pro_img" width="100%" /></a></p>
         </li>';
 
+        echo '<li><span class="dashicons dashicons-smartphone"></span> <h4>Small Screen Message</h4><p>Show a different announcement message on large and small screens. Add the feature from the announcement editor, enter each version, and the right message appears automatically based on the visitor\'s screen width. Use supported HTML and shortcodes to format your content and create the experience you want.</p>
+        </li>';
+
         echo '<li><span class="dashicons dashicons-admin-page"></span> <h4>Duplicate Announcement</h4><p>You can easily duplicate announcements at the click of a button.</p><br/>
         <p><a href="https://www.aakashweb.com/wordpress-plugins/announcer/?utm_source=admin&utm_medium=duplicate&utm_campaign=ancr-pro#pro" target="_blank"><img src="' . ANCR_ADMIN_URL . 'images/duplicate-announcement.png" class="pro_img" width="100%" /></a></p>
         </li>';

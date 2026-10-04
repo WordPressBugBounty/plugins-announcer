@@ -7,8 +7,8 @@ Donate link: https://www.paypal.me/vaakash/
 License: GPLv2 or later
 Requires PHP: 5.3
 Requires at least: 4.4
-Tested up to: 7.0.2
-Stable tag: 6.4
+Tested up to: 7.1.2
+Stable tag: 6.5
 
 Add customizable WordPress notification bar to display announcements, promotions, coupons, or news at the top or bottom of your website.
 
@@ -22,7 +22,7 @@ Built to be lightweight and user-friendly, you can create eye-catching sticky ba
 
 See it in action: View the [**Live demo**](https://wpdemos.aakashweb.com/announcer/?utm_source=readme&utm_medium=description&utm_campaign=ancr-pro) of the plugin!
 
-### ⭐ Why Choose Announcer? (Core Features)
+### ⭐ Why Choose Announcer?
 
 Announcer is packed with market-leading features to give you complete control over your website banners:
 
@@ -37,6 +37,7 @@ Announcer is packed with market-leading features to give you complete control ov
 * **Rich Content Support:** Insert **any content** into your banner, including images, HTML, or shortcodes from other plugins (like forms).
 * **Conditional Display Rules:** Target specific audiences by showing banners only on certain pages, posts, or categories.
 * **100% Mobile Responsive:** Designed mobile-first to ensure your announcements look perfect on any screen size.
+* **Accessibility Ready:** Includes basic ARIA labels and live-region support so announcement bars are easier to use with screen readers.
 * **Customization Made Easy:** Choose from multiple layout options and unlimited color palettes to match your brand.
 * **Trigger Options:** Automatically display banners based on a time delay or user page scroll.
 * **Smooth Animations:** Engage users with sleek open and close transition effects.
@@ -60,7 +61,8 @@ You can use the Announcer plugin to create a wide variety of sticky messages, in
 Ready to take your announcements to the next level? The **PRO version** offers advanced marketing tools designed to maximize your conversions and give you pinpoint targeting capabilities:
 
 * [**Multiple Messages (Ticker/Slider)**](https://www.aakashweb.com/wordpress-plugins/announcer/?utm_source=readme&utm_medium=description&utm_campaign=ancr-pro#pro) - Maximize your screen real estate. Add a slider or auto-playing ticker to display multiple messages within a single announcement bar, complete with next/prev navigation.
-* [**Urgency Countdown Timers**](https://www.aakashweb.com/wordpress-plugins/announcer/?utm_source=readme&utm_medium=description&utm_campaign=ancr-pro#pro) - Skyrocket your sales! Embed fully customizable countdown timers right into your promo bars to create FOMO (Fear Of Missing Out) for limited-time offers.
+* [**Different Large/Small Screen Message**](https://www.aakashweb.com/wordpress-plugins/announcer/?utm_source=readme&utm_medium=description&utm_campaign=ancr-pro#pro) - Show different announcement message for large and small screens.
+* [**Countdown Timers**](https://www.aakashweb.com/wordpress-plugins/announcer/?utm_source=readme&utm_medium=description&utm_campaign=ancr-pro#pro) - Skyrocket your sales! Embed fully customizable countdown timers right into your promo bars to create FOMO (Fear Of Missing Out) for limited-time offers.
 * [**Advanced Animations**](https://www.aakashweb.com/wordpress-plugins/announcer/?utm_source=readme&utm_medium=description&utm_campaign=ancr-pro#pro) - Grab instant attention with eye-catching entrance animations for your banners and funky effects for your CTA buttons.
 * [**Smart Visitor Targeting**](https://www.aakashweb.com/wordpress-plugins/announcer/?utm_source=readme&utm_medium=description&utm_campaign=ancr-pro#pro) - Show the right message to the right user. Conditionally display banners based on traffic source (referrer), device type, OS, browser, user login status, user role, or even visit count!
 * [**Shortcode Placement**](https://www.aakashweb.com/wordpress-plugins/announcer/?utm_source=readme&utm_medium=description&utm_campaign=ancr-pro#pro) - Need a banner inside a specific post? Use shortcodes to place your announcements exactly where you want them, inside pages, posts, or theme templates.
@@ -142,6 +144,12 @@ For more FAQs, please visit the [plugin homepage](https://www.aakashweb.com/faqs
 
 
 ## Changelog
+
+### 6.5
+* New: Added basic ARIA attributes to announcement containers, close buttons, and CTA links for improved accessibility.
+* Fix: Screen-reader friendly labeling for dismiss and action controls.
+* Fix: Hide announcements in legacy widgets preview.
+* Fix: Support for WordPress 7.1.
 
 ### 6.4
 * New: New location rules to target WooCommerce pages.
